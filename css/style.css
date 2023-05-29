@@ -1,0 +1,998 @@
+@import url(./fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+    font-weight: 400;
+    background: #191919;
+}
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header__nav{
+    border-bottom: 2px solid #ffffff2d;
+}
+
+.header__nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.header{
+    background: url(../img/banner.png) no-repeat center/cover;
+    height: 1080px;
+}
+
+.nav__menu{
+    display: flex;
+    gap: 45px;
+}
+
+.menu__item a{
+    color: white;
+    font-family: 'HelveticaNeueCyr-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.menu__item a:hover{
+    color: #34C759;
+}
+
+.banner__wrap{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__span{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 84px;
+    text-transform: capitalize;
+}
+
+.banner__h1{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 60px; 
+    max-width: 700px;
+    width: 100%;
+    height: 163px;
+    margin-top: 80px;
+}
+
+.banner__p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 595px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.7;
+    margin-top: 16px;
+}
+
+.banner__btn{
+    padding: 25px 58px;
+    background: #34C759;
+    border-radius: 43px;
+    border: none; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 40px;
+    max-width: 220px;
+    width: 100%;
+    height: 72px;
+}
+
+.banner__btn:hover{
+    background: black;
+    color: #34C759;
+}
+
+.banner__contacts{
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    margin-top: 70px;
+}
+
+.contacts__item{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+}
+
+.contacts__item-img{
+    max-width: 26px;
+    width: 100%;
+    height: 26px;
+}
+
+.contacts__item-h{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.contacts__item-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.5;
+}
+
+.basics{
+    max-width: 1110px;
+    width: 100%;
+    height: 736px;
+    border-radius: 6px;
+    background: #252525;
+    padding: 90px 65px;
+    color: white;
+    transform: translateY(-200px);
+}
+
+.basic__title-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basics__title{
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    color: rgba(217, 217, 217, 1);
+    letter-spacing: 0.2em;
+    z-index: 1;
+}
+
+.basic__title-bg{
+    color: #303030;
+    letter-spacing: 0.2em;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: -45px;
+    left: 250px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 150px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.basics__p{
+    color: #A6A6A6; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 734px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.basics__img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.basics__img-icon{
+    display: flex;
+    align-items: center;
+}
+
+.basics__img-slide{
+    display: flex;
+    gap: 34px;
+}
+
+.basics__img-slide-img{
+    max-width: 350px;
+    width: 100%;
+    height: 270px;
+}
+
+.work__title-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.work__title{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    color: rgba(217, 217, 217, 1);
+    text-align: center;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.work__title-bg{
+    color: #303030;
+    letter-spacing: 0.2em;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: -34px;
+    left: 325px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 150px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.work__hr{
+    width: 60px;
+    height: 2px;
+    text-align: center;
+    border-color: #34C759;
+    position: absolute;
+    transform: translateX(500px);
+    margin-top: 30px;
+}
+
+.work__options{
+    display: flex;
+    gap: 30px;
+    margin-top: 90px;
+}
+
+.work__options-item{
+    max-width: 255px;
+    width: 100%;
+    background: #252525;
+    padding: 24px 31px 42px 24px;
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s;
+}
+
+.work__options-item-h{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.work__options-item-hr{
+    width: 56px;
+    margin-top: 15px;
+    border-color: #34C759;
+}
+
+.work__options-item-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.work__options-item:hover {
+    background: #34C759;
+    color: black;
+}
+
+.dishes{
+    margin-top: 90px;
+}
+
+.dishes__title-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.dishes__title{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    color: rgba(217, 217, 217, 1);
+    text-align: center;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.dishes__title-bg{
+    color: #303030;
+    letter-spacing: 0.2em;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: -35px;
+    left: 268px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 150px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.dishes__menu{
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dishes__menu-item{
+    max-width: 350px;
+    width: 100%;
+    background: #252525;
+    border-radius: 6px;
+}
+
+.dishes__menu-item-title-h{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #D9D9D9;
+}
+
+.dishes__menu-item-title-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #A4A8B2;
+}
+
+.dishes__menu-item-desc{
+    padding: 29px 30px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dishes__menu-item-p{   
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #85878C;
+}
+
+.dishes__menu-item-comment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dishes__menu-item-comment-votes{
+    display: flex;
+    gap: 11px;
+}
+
+.dishes__menu-item-comment-btn{
+    padding: 0 36px;
+    color: #252525;
+    background: #34C759;
+    border: none; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 40px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.dishes__menu-item-comment-btn:hover{
+    background: black;
+    color: #34C759;
+}
+
+.dishes__menu-item-comment-h{
+    color: #B3B3B3
+}
+
+.chefs{
+    margin-top: 90px;
+}
+
+.chefs__title-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.chefs__title{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    color: rgba(217, 217, 217, 1);
+    text-align: center;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.chefs__title-bg{
+    color: #303030;
+    letter-spacing: 0.2em;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: -35px;
+    left: 305px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 150px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.chefs__list-item{
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 38px;
+}
+
+.chefs__list-item-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.chefs__list-item-info-name{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.chefs__list-item-info-name-h{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+
+.chefs__list-item-info-name-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.chefs__list-img{
+    display: flex;
+    gap: 30px;
+}
+
+.chefs__list{
+    display: flex;
+    gap: 30px;
+    margin-top: 38px;
+}
+
+.recipes{
+    position: relative;
+}
+
+.recipes__title-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.recipes__title{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    color: rgba(217, 217, 217, 1);
+    text-align: center;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.recipes__title-bg{
+    color: #303030;
+    letter-spacing: 0.2em;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: -35px;
+    left: 225px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 150px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.recipes__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    margin-top: 90px;
+}
+
+.recipes__list-item{
+    background: url(../img/recipes.png) no-repeat center/cover;
+    max-width: 540px;
+    width: 100%;
+    height: 510px;
+    position: relative;
+    color: white;
+    padding: 30px 65px;
+}
+
+.recipes__list-item-title{
+    text-transform: uppercase; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.384);
+    max-width: 90px;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    transform: translateX(160px);
+    top: 70px;
+}
+
+.recipes__list-item__content{
+    padding-top: 40px;
+}
+
+.icon{
+    position: absolute;
+    right: 30px;
+}
+
+.recipes__list-item-date{
+    margin-top: 100px; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipes__list-item-h{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.recipes__list-item-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipes__list-item-icons{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.recipes__list-item-icons-show{
+    display: flex;
+    gap: 12px;
+}
+
+.recipes__list-item-icons-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.recipes__wrap{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.recipes__list-type{
+    background: #252525;
+    max-width: 540px;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+    height: 150px;
+}
+
+.recipes__list-type-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.recipes__list-type-name{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.recipes__list-type-name-h{
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+    padding: 0 15px; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: white;   
+}
+
+.recipes__list-type-name-h-sweets{
+     background: black;
+    border-radius: 3px;
+    padding: 0 15px; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: white;   
+}
+
+.recipes__list-type-name-p{
+    color: #B3B3B3; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.span__sweets{
+    color: rgba(26, 26, 26, 1); 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.recipes__list-type-comments{
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    right: 28px;
+    bottom: 20px;
+}
+
+.recipes__list-type-sweets{
+    max-width: 540px;
+    width: 100%;
+    padding: 30px;
+    color: black;
+    position: relative;
+    border-radius: 6px;
+    height: 150px;
+    background: #34C759;
+}
+
+.recipes__list-type-dinner{
+    max-width: 540px;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+    height: 150px;
+    background: url(../img/recipes2.png);
+}
+
+.social__title-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.social__title{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    color: rgba(217, 217, 217, 1);
+    text-align: center;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.social__title-bg{
+    color: #303030;
+    letter-spacing: 0.2em;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: -35px;
+    left: 275px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 150px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.social__card{
+    max-width: 350px;
+    width: 100%;
+    height: 330px;
+    color: white;
+    padding: 25px;
+    background: #252525;
+    position: relative;
+    border-radius: 6px;
+}
+
+.social__card-inst{
+    max-width: 350px;
+    width: 100%;
+    height: 330px;
+    color: white;
+    background: #252525;
+    border-radius: 6px;
+
+}
+
+.social__card-header-inst{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.social__card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social__card-header-logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social__card-header-img{
+    background: #262626;
+    border: 2px solid #303030;
+    border-radius: 30px;
+}
+
+.social__card-header-h{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.social__card-header-btn{
+    padding: 0 18px;
+    border: none; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 40px;
+    background: #262626;
+    border: 2px solid #303030;
+    border-radius: 30px;
+    color: #737373;
+    text-transform: uppercase;
+}
+
+.social__card-header-btn:hover{
+    background: #34C759;
+    color: black;
+}
+
+.social__hr{
+    margin-top: 23px;
+    max-width: 350px;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+}
+
+.social__card-date{
+    margin-top: 45px; 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #737373;
+}
+
+.social__card-p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+}
+
+.social__card-nick{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #34C759;
+    margin-top: 10px;
+}
+
+.social__wrap{
+    display: flex;
+    gap: 30px;
+    margin-top: 90px;
+}
+
+.social__card-profile{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social__card-profile-img{
+    max-width: 104px;
+    width: 100%;
+    height: 118px;
+}
+
+.scroll__hr{
+    width: 4px;
+    height: 92px;
+    border-radius: 100px;
+    position: absolute;
+    right: 10px;
+    top: 120px;
+}
+
+.footer{
+    background: rgba(37, 37, 37, 1);
+    padding: 32px 0;
+    margin-top: 120px;
+    border-bottom: 2px solid rgba(48, 48, 48, 1);
+}
+
+.footer__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer__contacts-item-h{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer__contacts-item-p{
+    color: rgba(255, 255, 255, 0.336); 
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 60px; */
+}
+
+.author{
+    background: rgba(37, 37, 37, 1);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.author__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.author__logo-p{
+    font-family:' Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    /* line-height: 60px; */
+    color: rgba(115, 115, 115, 1);
+}
